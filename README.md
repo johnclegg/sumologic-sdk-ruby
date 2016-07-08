@@ -19,7 +19,7 @@ The interface for this SDK is still being built out to follow the structure in t
 The following methods are currently implemented:
 
 ```ruby
-sumo = SumoLogic::Client.new(access_id, access_key)
+sumo = SumoLogic::Client.new(access_id, access_key [,api_url])
 
 # Search
 r = sumo.search(query [, from, to, time_zone])
@@ -38,7 +38,9 @@ r = sumo.dashboard dashboard_id
 r = sumo.dashboard_data dashboard_id
 ```
 
-Note, for the search methods, the query parameter can be exactly the same query that is entered into the Sumo Logic web console.
+Notes:
+* For the search methods, the query parameter can be exactly the same query that is entered into the Sumo Logic web console.
+* You can add an optional api_url parameter in the API initialisation method to match the api domain that you are using on Sumo. The default api domains are "https://api.sumologic.com/api/v1" or "https://api.us2.sumologic.com/api/v1"
 
 Example scripts are located in the `scripts` directory of the [GitHub repo](https://github.com/grokify/sumologic-sdk-ruby).
 
