@@ -40,7 +40,7 @@ r = sumo.dashboard_data dashboard_id
 
 Notes:
 * For the search methods, the query parameter can be exactly the same query that is entered into the Sumo Logic web console.
-* You can add an optional api_url parameter in the API initialisation method to match the api domain that you are using on Sumo. The default api domains are "https://api.sumologic.com/api/v1" or "https://api.us2.sumologic.com/api/v1"
+* You can add an optional api_url parameter in the API initialisation method to set the api domain that you are using on Sumo. The default api domains are "https://api.sumologic.com/api/v1" or "https://api.us2.sumologic.com/api/v1"
 
 Example scripts are located in the `scripts` directory of the [GitHub repo](https://github.com/grokify/sumologic-sdk-ruby).
 
